@@ -1,0 +1,63 @@
+<html>
+
+<head>
+</head>
+
+<body style="background-color: cadetblue">
+    <button onclick="add()" class="button">Add</button>
+    <p id="add"></p>
+    <button onclick="subtract()" class="button">Subtract</button>
+    <p id="subtract"></p>
+    <button onclick="multiply()" class="button">Multiply</button>
+    <p id="multiply"></p>
+    <button onclick="division()" class="button">Divide</button>
+    <p id="division"></p>
+    <script>
+        function add() {
+            var a = Number(prompt("enter a number"))
+            var b = Number(prompt("enter another number"))
+            console.log(typeof a)
+            console.log(typeof b)
+            var total = a + b;
+            document.getElementById("add").innerHTML = total
+
+
+        }
+
+        function subtract() {
+            var a = Number(prompt("enter a number"))
+            var b = Number(prompt("enter another number"))
+            console.log(typeof a)
+            console.log(typeof b)
+            var total = a - b;
+            document.getElementById("subtract").innerHTML = total
+
+
+        }
+
+        function multiply() {
+            var a = Number(prompt("enter a number"))
+            var b = Number(prompt("enter another number"))
+            console.log(typeof a)
+            console.log(typeof b)
+            var total = a * b;
+            document.getElementById("multiply").innerHTML = total
+
+
+        }
+
+        function division() {
+            var a = Number(prompt("enter a number"))
+            var b = Number(prompt("enter another number"))
+            console.log(typeof a)
+            console.log(typeof b)
+            var total = a / b;
+            document.getElementById("division").innerHTML = total
+
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> Buttons for Math </title>
+</head>
+
+<body style="background-color: cadetblue">
+    <h2> Math </h2>
+    <h3> JS Math </h3>
+    <script>
+        function addition() {
+            var x = 30
+            var y = 6
+            document.getElementById("question-1").innerHTML = x + y;
+        }
+
+        function subtraction() {
+            var x = 30
+            var y = 6
+            document.getElementById("question-2").innerHTML = x - y;
+        }
+
+        function multplication() {
+            var x = 30
+            var y = 6
+            document.getElementById("question-3").innerHTML = x * y;
+        }
+
+        function division() {
+            var x = 30
+            var y = 6
+            document.getElementById("question-4").innerHTML = x / y;
+        }
+
+    </script>
+    <button onclick="addition()"> Add me </button>
+    <p id="question-1"> The answer is......</p>
+    <br>
+    <button onclick="subtraction()"> Subtract Me</button>
+    <p id="question-2"> The answer is......</p>
+    <br>
+    <button onclick="multplication()"> Multiply Me</button>
+    <p id="question-3"> The answer is......</p>
+    <br>
+    <button onclick="division()"> Divide Me</button>
+    <p id="question-4"> The answer is......</p>
+</body>
+
+</html>
