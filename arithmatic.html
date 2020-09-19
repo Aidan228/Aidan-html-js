@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>JS Arithmatic </title>
+</head>
+
+<body style="background-color: cadetblue">
+    <h2> Even and Odd Arithmatic</h2>
+    <script>
+        function findEvenOdd() {
+            var a = 10
+            var remander = a % 2
+            console.log(typeof remander)
+            document.getElementById("arithmatic").innerHTML = remander;
+            if (remander == 0) {
+                alert("this is an even number")
+            } else {
+                alert("this is an odd number")
+            }
+        }
+
+    </script>
+    <button onclick="findEvenOdd()">Even or Odd???</button>
+    <p id="arithmatic"></p>
+</body>
+
+</html>
