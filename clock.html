@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title> The Clock </title>
+    <style>
+        table,
+        th,
+        td {
+            border: solid black;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+
+        }
+
+        .tabBlock {
+            background-color: rebeccapurple;
+            border: solid 0px #FFA54F;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            max-width: 200px;
+            width: 100%;
+            overflow: hidden;
+            display: block;
+        }
+
+        .clock {
+            vertical-align: middle;
+            font-family: Orbitron;
+            font-size: 40px;
+            font-weight: normal;
+            color: #FFF;
+            padding: 0 10px;
+        }
+
+        .clocklg {
+            vertical-align: middle;
+            font-family: Orbitron;
+            font-size: 20px;
+            font-weight: normal;
+            color: #FFF;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: cadetblue" onload="clockTime()">
+    <div style="background-color: chartreuse;
+        max-width:220px;width:100%;margin:0 auto;padding:20px;">
+        <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="2px">
+            <tr>
+                <td id="hour-minute"></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td id="am-pm"></td>
+                        </tr>
+                        <tr>
+                            <td id="second"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+        </table>
+        <script>
+            function clockTime() {
+                var date = new Date()
+                console.log(date)
+                var hour = date.getHours()
+                console.log(hour)
+                var minute = date.getMinutes()
+                console.log(minute)
+                if (minute < 10) {
+                    minute = "0" + minute
+                }
+                var time = hour + ":" + minute
+                console.log(time)
+                var seconds = date.getSeconds()
+                console.log(seconds)
+
+                if (seconds < 10) {
+                    seconds = "0" + seconds
+                }
+
+                if (hour > 12) {
+                    document.getElementById("am-pm").innerHTML = "Pm"
+                } else {
+                    document.getElementById("am-pm").innerHTML = "Am"
+                }
+                document.getElementById("second").innerHTML = seconds
+                document.getElementById("hour-minute").innerHTML = time
+                var calaulateTime
+                calaulateTime = setInterval("clockTime(1000)")
+            }
+
+        </script>
+
+</body>
+
+</html>
