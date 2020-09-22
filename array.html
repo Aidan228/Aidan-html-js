@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        Array-project
+    </title>
+</head>
+
+<body>
+
+    <p>Click button for my array project</p>
+
+
+    <button onclick="project()">PRESS NOW!!!!!!</button>
+    <p id="Array"></p>
+    <br>
+    <p id="Grouping"></p>
+    <br>
+    <p id="Group"></p>
+    <script>
+        function project() {
+            var cars = [];
+            var cars = [
+                "Saab",
+                "Volvo",
+                "BMW"
+            ];
+
+            console.log(cars[0])
+            console.log(cars[1])
+            console.log(cars[2])
+
+            document.getElementById("Array").innerHTML = cars[0]
+            document.getElementById("Grouping").innerHTML = cars[1]
+            document.getElementById("Group").innerHTML = cars[2]
+        }
+
+    </script>
+
+</body>
+
+</html>
