@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Random Number generation</title>
+    <style>
+        #add {
+            color: gold
+        }
+
+    </style>
+</head>
+
+<body style="background-color: cadetblue">
+    <button onclick="genarateNumber()">Genarate Number</button>
+    <p id="add"></p>
+    <script>
+        function genarateNumber() {
+
+            var randomNumber = Math.floor(Math.random() * 100);
+            console.log("The value for randomNumber is:" + randomNumber)
+            document.getElementById("add").innerHTML = "The random number is:" + randomNumber;
+
+        }
+
+    </script>
+</body>
+
+</html>
